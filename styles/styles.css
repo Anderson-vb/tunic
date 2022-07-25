@@ -50,7 +50,7 @@ cite {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('./images/tunic-1.jpg') no-repeat center;
+  background: url('../images/tunic-1.jpg') no-repeat center;
 }
 
 .inicio img {
@@ -82,4 +82,28 @@ cite {
 }
 .descripcion__imagen img{
   width: 100%;
+  border-radius: 20px;
+}
+
+/* Responsive */
+
+@media (min-width: 750px) {
+  .inicio img {
+    width: 600px; 
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .descripcion {
+    height: 100vh;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .descripcion__imagen {
+    width: 50%;
+  }
+  .descripcion__texto {
+    width: 50%;
+  }
 }
