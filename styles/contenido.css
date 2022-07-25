@@ -3,42 +3,77 @@
     padding: 0;
     font: 20px sans-serif;
     box-sizing: border-box;
-  }
+}
   
-  li {
-    list-style: none;
-  }
-  
-  a {
+a {
     text-decoration: none;
     color: #000;
-  }
+}
   
-  h1 {
-    font: 3rem sans-serif;
+h1 {
+    font: 2rem sans-serif;
     color: #fff;
-  }
+    text-shadow: 1px 1px 5px black;
+}
   
-  h2 {
+h2 {
     font: 1.5rem sans-serif;
-  }
+}
   
-  cite {
+cite {
     font: .9rem sans-serif;
-  }
+}
   
-  /* Navbar */
+/* Navbar */
   
-  .navbar {
+.navbar {
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
   
-  .navbar__ul {
+.navbar__ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+
+.navbar__ul li {
+  list-style-type: none;
+}
+
+/* Contenido */
+
+.contenido {
+  height: 100vh;
+  padding: 40px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url('../images/tunic-3.jpg') no-repeat center;
+}
+
+.contenido li {
+  color: white;
+  margin: 10px 0;
+  text-shadow: 1px 1px 1px black;
+}
+.contenido a {
+  color: white;
+  text-decoration: underline;
+  text-shadow: 1px 1px 1.5px black;
+}
+
+@media (min-width: 1000px) {
+  h1 {
+    font-size: 4rem;
   }
+
+  .contenido a {
+    font-size: 1.5rem;
+  }
+}
+
