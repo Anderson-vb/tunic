@@ -50,7 +50,7 @@ cite {
 
 .contenido {
   align-items: center;
-  background: url('../images/tunic-3.jpg') no-repeat center;
+  background: url('../images/tunic-images/tunic-3.jpg') no-repeat center;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -71,11 +71,11 @@ cite {
 
 @media (min-width: 1000px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .contenido a {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
