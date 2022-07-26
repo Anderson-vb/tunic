@@ -1,71 +1,73 @@
 * {
-    margin: 0;
-    padding: 0;
-    font: 20px sans-serif;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  font: 20px sans-serif;
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px 1px 1.5px #000;
 }
   
 a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
 }
   
 h1 {
-    font: 2rem sans-serif;
-    color: #fff;
-    text-shadow: 1px 1px 5px black;
-}
-  
-h2 {
-    font: 1.5rem sans-serif;
+  color: #fff;
+  font: 2rem sans-serif;
 }
   
 cite {
-    font: .9rem sans-serif;
+  font: .9rem sans-serif;
 }
   
 /* Navbar */
   
+.navbar, .navbar__ul {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 .navbar {
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  box-shadow: 1px 1px 5px #000;
+  height: 50px;
 }
   
 .navbar__ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  gap: 20px;
 }
 
 .navbar__ul li {
   list-style-type: none;
 }
 
+.navbar a {
+  color: #000;
+  text-shadow: none;
+}
+
 /* Contenido */
 
 .contenido {
-  height: 100vh;
-  padding: 40px 10px;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
   background: url('../images/tunic-3.jpg') no-repeat center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  padding: 40px 10px;
 }
 
 .contenido li {
   color: white;
   margin: 10px 0;
-  text-shadow: 1px 1px 1px black;
 }
 .contenido a {
   color: white;
   text-decoration: underline;
-  text-shadow: 1px 1px 1.5px black;
 }
+
+/* Responsive */
 
 @media (min-width: 1000px) {
   h1 {
