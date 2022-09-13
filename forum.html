@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./styles/forum.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="navbar__ul">
+            <li class="navbar__li"><a href="index.html">Home</a></li>
+            <li class="navbar__li"><a href="./contenido/contenido.html">Content</a></li>
+            <li class="navbar__li"><a href="#">About</a></li>
+            <li class="navbar__li"><a href="./forum.html">Forum</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container d-flex justify-content-center align-items-center tunic-forum-img">
+        <img src="./images/forum/tunic-forum.png" class="img-fluid"/>
+    </div>
+
+    <div class="container p-5 min-vh-100">
+
+        <!-- Create Post -->
+
+        <!-- Create Post Button-->
+
+        <p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-form" aria-expanded="false" aria-controls="collapse-form">
+              New Post
+            </button>
+        </p>
+
+        <!-- Create Post Form -->
+
+        <div class="collapse form-container" id="collapse-form">
+            <div class="card card-body">
+                <form>
+    
+                    <div class="mb-3">
+                        <label for="title-input" class="form-label">Post Title</label>
+                        <input id="title-input" type="text" class="form-control"> 
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="content-input" class="form-label">Post Content</label>
+                        <textarea id="content-input" class="form-control" rows="3"></textarea>
+                    </div>
+                    
+                    <button id="create-post-btn" type="submit" class="btn btn-primary">Create Post</button>
+
+                </form>
+            </div>
+        </div>
+
+        <!-- Posts -->
+
+        <!-- Post Template -->
+
+        <div class="posts"></div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
