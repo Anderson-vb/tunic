@@ -15,21 +15,7 @@ const addPost = (title, content) => {
     content: content,
   }
 
-  fetch('http://localhost:3000/', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify(post),
-})
-  .then((response) => response.json())
-  .then((data) => {
-    console.log('Success:', data);
-    posts = data;
-  })
-  .catch((error) => {
-    console.error('Error:', error);
-  });
+  posts = posts.concat(post);
 }
 
 const createPostElement = (id, title, content) => {
@@ -73,15 +59,9 @@ const removeAllChildNodes = (parent) => {
 
 const renderAllPosts = () => {
   removeAllChildNodes(document.querySelector('.post-content-section'));
-
-  fetch('http://localhost:3000')
-    .then(res => res.json())
-    .then(data => {
-      posts = data;
-      postElements = posts.map(post => {
-        return createPostElement(post.id, post.title, post.content, post.img);
-      });
-    })
+  postElements = posts.map(post => {
+    return createPostElement(post.id, post.title, post.content, post.img);
+  });
 };
 
 createPostBtn.addEventListener('click', (event) => {
