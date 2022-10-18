@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  color: #000;
+  font: 20px sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.about-card__header {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #000;
+}
+
+.main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.about-card {
+  align-items: center;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 0 5px #000;
+}
+
+.about-card__names {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
