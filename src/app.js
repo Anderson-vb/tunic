@@ -1,16 +1,10 @@
-let posts = [];
-
 const createPostBtn = document.querySelector('#create-post-btn');
 
+let posts = [];
+
 const addPost = (title, content) => {
-  let maxId = 0;
-  if (posts.length != 0) {
-    const ids = posts.map(post => post.id);
-    maxId = Math.max(...ids);
-  }
   
   const post = {
-    id: maxId + 1,
     title: title,
     content: content,
   }
@@ -18,7 +12,7 @@ const addPost = (title, content) => {
   posts = posts.concat(post);
 }
 
-const createPostElement = (id, title, content) => {
+const createPostElement = (title, content) => {
 
   const postDiv = document.createElement('div');
   const post__imgDiv = document.createElement('div');
@@ -60,7 +54,7 @@ const removeAllChildNodes = (parent) => {
 const renderAllPosts = () => {
   removeAllChildNodes(document.querySelector('.post-content-section'));
   postElements = posts.map(post => {
-    return createPostElement(post.id, post.title, post.content, post.img);
+    return createPostElement(post.title, post.content, post.img);
   });
 };
 
